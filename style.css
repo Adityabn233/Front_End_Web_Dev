@@ -1,0 +1,26 @@
+.root{
+    --primary-color: 
+}
+
+
+
+.banner{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: -10px -10px -10px -10px;
+    margin-bottom: 10px;
+    font-size: smaller;
+    padding: 5px;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 90% 10%;
+
+}
+
+.top-button{
+    transform: translateY(100px);
+}
+
