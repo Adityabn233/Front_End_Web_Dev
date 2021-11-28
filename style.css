@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+1+Code:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gochi+Hand&family=M+PLUS+1+Code:wght@300&display=swap');
 
 .banner{
     background-color: black;
@@ -8,11 +8,16 @@
     margin-bottom: 10px;
     font-size: smaller;
     padding: 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 1;
 }
 
 .top{
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 42% 48% 10%;
+    
 }
 
 .top-img{
@@ -20,9 +25,26 @@
     padding-left: 75px;
     padding-top: 30px;
 }
+.top-title{
+font-family: 'M PLUS 1 Code';
+display: flex;
+align-items: center;
+justify-content: left;
+font-weight: 900;
+font-size: larger;
+text-decoration: underline;
+}
 
-.top-button{
-    transform: translateY(100px);
+.top-button button{
+  
+    transform: translateY(80px) translateX(-30px);
+    border:  none;
+    background-color: #00698b;
+    color: #e6ecf2;
+    padding: 10px 40px 10px 40px;
+    font-family: 'M PLUS 1 Code';
+    font-weight:bolder;
+    
 }
 
 .brand {
@@ -35,6 +57,7 @@
     text-shadow: 2px 5px 2px black;
     grid-template-columns: 1fr 1fr;
     padding: 50px 50px 50px 100px;
+    margin-bottom: 240px;
 
 }
 
@@ -44,7 +67,7 @@
     transform: translateX(200px);
     
     border-style: outset;
-    box-shadow: 30px 30px 700px #62b4cf;
+    box-shadow: -30px 30px 800px #62b4cf;
     border-radius: 700px;
     
 }
@@ -61,7 +84,7 @@
 
 ::-webkit-scrollbar-thumb{
     background-color:#001f3f;
-    border-radius: 40px;
+    border-radius: 70px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -73,6 +96,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     margin-top: 200px;
+    
 }
 
 .notif{
@@ -99,24 +123,23 @@
     
 }
 
-* {box-sizing:border-box}
 
-/* Slideshow container */
+
 .slideshow-container {
+  background-color: #e7feff;
   max-width: 700px;
   position: relative;
   margin-left: 50px;
   margin-top: 50px;
- 
+  
 }
 
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -132,38 +155,16 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -182,9 +183,26 @@
 }
 
 .login-redirect{
-    font-family: 'M PLUS 1 Code';
+    font-family: 'M Plus 1 Code';
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: larger;
+    font-size: 30pt;
+    font-weight: 900;
+    color: #10467b;
 }
+
+.login-redirect a:hover{
+  color: #62b4cf;
+}
+
+.Us {
+ display: grid;
+ position: relative;
+ grid-template-columns: 60% 40%;
+}
+
+.aboutUs{
+  font-family: 'M PLUS 1 Code';
+}
+
