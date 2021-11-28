@@ -1,107 +1,208 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Project Submission
-        </title>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gochi+Hand&family=M+PLUS+1+Code:wght@300&display=swap');
 
-        <link href="style.css" type="text/css" rel="stylesheet">
+.banner{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: -10px -10px -10px -10px;
+    margin-bottom: 10px;
+    font-size: smaller;
+    padding: 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
 
-        <body>
-            <div class="banner">
-                You are on the BMS project submission portal.
-            </div>
-
-            <div class="top">
-                <div class="top-img">
-                    <img src="bmslogo.png" width=150px>
-                </div>
-
-                <div class="top-button">
-                    <button>Sign In </button>
-                </div>
-            </div>
-
-            <div class="brand">
-                <p>BMSCE Project Submission Portal</p>
-                <img src="survivingyourfirstmonth02.jpg">
-                
-            </div>
-
-
-            <div class="slideshow-container">
-
-                
-                <div class="mySlides fade">
-                  
-                  <img src="bmsce.jpg" height=400px width=700px>
-                  
-                </div>
-              
-                <div class="mySlides fade">
-                  
-                  <img src="Covid19.jpg" height=400px width=700px>
-                  
-                </div>
-              
-                <div class="mySlides fade">
-                  
-                  <img src="Library-1.jpg" height=400px width=700px>
-                  
-                </div>
-
-                <div class="mySlides fade">
-                    
-                    <img src="Library-5.jpg" height=400px width=700px>
-                    
-                  </div>
-
-                  <div class="mySlides fade">
-                    
-                    <img src="Library-10.jpg" height=400px width=700px>
-                
-                  </div>
-
-                  <div class="mySlides fade">
-                    
-                    <img src="Slider-01.jpg" height=400px width=700px>
-                    
-                  </div>
-              
-                
-              </div>
-              <br>
+.top{
+    display: grid;
+    grid-template-columns: 42% 48% 10%;
     
+}
 
-              <script src="slideshow.js"></script>
+.top-img{
+    display: flex;
+    padding-left: 75px;
+    padding-top: 30px;
+}
+.top-title{
+font-family: 'M PLUS 1 Code';
+display: flex;
+align-items: center;
+justify-content: left;
+font-weight: 900;
+font-size: larger;
+text-decoration: underline;
+}
 
-            <div class="main">
-                <div class="notif">
-                    
-        
-                    <ul>
-                        <li>
-                            This is a sample notif
-                        </li>
+.top-button button{
+  
+    transform: translateY(80px) translateX(-30px);
+    border:  none;
+    background-color: #00698b;
+    color: #e6ecf2;
+    padding: 10px 40px 10px 40px;
+    font-family: 'M PLUS 1 Code';
+    font-weight:bolder;
+    
+}
 
-                        <li>This is another sample notif</li>
-                        <li>This is yet another sample notif</li>
-                        <li>This is the 4th notif</li>
-                        <li>This is the 5th notif</li>
-                        <li>This is the 6th notif</li>
-                        <li>This is the 7th notif</li>
-                    </ul>
-                </div>
+.brand {
+    font-family: 'Bebas Neue';
+    color: #00698b;
+    font-size: 80px;
+    width: 900px;
+    display: grid;
+    transform: translate(100px, 100px);
+    text-shadow: 2px 5px 2px black;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 50px 50px 100px;
+    margin-bottom: 240px;
+
+}
 
 
-                <div class="login-redirect">
-                        <a href="insert login page">Click here</a>  to login to your college account.
-                </div>
 
-            </div>
-            
+.brand img{
+    transform: translateX(200px);
+    
+    border-style: outset;
+    box-shadow: -30px 30px 800px #62b4cf;
+    border-radius: 700px;
+    
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#001f3f;
+    border-radius: 70px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#10467b;
+}
 
 
-        </body>
-    </head>
-</html>
+.main{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 200px;
+    
+}
+
+.notif{
+
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+}
+.main ul{
+    list-style-type: circle;
+    position: relative;
+    display: block;
+    overflow-y: scroll;
+    display: grid;
+    padding-left: 50px;
+    font-size: 15pt;
+    height: 200px;
+    line-height: 40px;
+    width: 80%;
+    background-color: #e6ecf2;
+    border-radius: 30px;
+    
+    
+}
+
+
+
+.slideshow-container {
+  background-color: #e7feff;
+  max-width: 700px;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 50px;
+  
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.login-redirect{
+    font-family: 'M Plus 1 Code';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30pt;
+    font-weight: 900;
+    color: #10467b;
+}
+
+.login-redirect a:hover{
+  color: #62b4cf;
+}
+
+.Us {
+ display: grid;
+ position: relative;
+ grid-template-columns: 60% 40%;
+}
+
+.aboutUs{
+  font-family: 'M PLUS 1 Code';
+}
+
