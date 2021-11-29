@@ -1,208 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gochi+Hand&family=M+PLUS+1+Code:wght@300&display=swap');
-
-.banner{
-    background-color: black;
-    color: white;
-    text-align: center;
-    margin: -10px -10px -10px -10px;
-    margin-bottom: 10px;
-    font-size: smaller;
-    padding: 5px;
-    position: -webkit-sticky;
-    position: sticky;
-    top:0;
-    z-index: 1;
+img{
+	width: 5%;
+	height:10%;
+	position :absolute;
+	left:25px;
+	top:60px;
+}
+.head{
+  display:inline-block;
+  z-index:0;
+	height: 140px;
+	background-color: #e8f4f8;
+}
+.head button{
+	border: solid 2px red;
+	border-radius:6px;
+	position: absolute;
+	top:75px;
+	right:70px;
+	color:red;
+	height:5%;
+	width:6%;
+	font-size: 18px;
+}
+.head button:hover{
+	background-color: lightblue;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-size:18px;
+  height:30%;
 }
 
-.top{
-    display: grid;
-    grid-template-columns: 42% 48% 10%;
-    
+li {
+  float: right;
 }
 
-.top-img{
-    display: flex;
-    padding-left: 75px;
-    padding-top: 30px;
-}
-.top-title{
-font-family: 'M PLUS 1 Code';
-display: flex;
-align-items: center;
-justify-content: left;
-font-weight: 900;
-font-size: larger;
-text-decoration: underline;
-}
-
-.top-button button{
-  
-    transform: translateY(80px) translateX(-30px);
-    border:  none;
-    background-color: #00698b;
-    color: #e6ecf2;
-    padding: 10px 40px 10px 40px;
-    font-family: 'M PLUS 1 Code';
-    font-weight:bolder;
-    
-}
-
-.brand {
-    font-family: 'Bebas Neue';
-    color: #00698b;
-    font-size: 80px;
-    width: 900px;
-    display: grid;
-    transform: translate(100px, 100px);
-    text-shadow: 2px 5px 2px black;
-    grid-template-columns: 1fr 1fr;
-    padding: 50px 50px 50px 100px;
-    margin-bottom: 240px;
-
-}
-
-
-
-.brand img{
-    transform: translateX(200px);
-    
-    border-style: outset;
-    box-shadow: -30px 30px 800px #62b4cf;
-    border-radius: 700px;
-    
-}
-
-::-webkit-scrollbar{
-    width: 10px;
-}
-
-::-webkit-scrollbar-track{
-    background-color: whitesmoke;
-    border: none;
-    border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb{
-    background-color:#001f3f;
-    border-radius: 70px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background-color:#10467b;
-}
-
-
-.main{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin-top: 200px;
-    
-}
-
-.notif{
-
-    display: flex;
-    position: static;
-    align-items: center;
-    justify-content: center;
-}
-.main ul{
-    list-style-type: circle;
-    position: relative;
-    display: block;
-    overflow-y: scroll;
-    display: grid;
-    padding-left: 50px;
-    font-size: 15pt;
-    height: 200px;
-    line-height: 40px;
-    width: 80%;
-    background-color: #e6ecf2;
-    border-radius: 30px;
-    
-    
-}
-
-
-
-.slideshow-container {
-  background-color: #e7feff;
-  max-width: 700px;
-  position: relative;
-  margin-left: 50px;
-  margin-top: 50px;
-  
-}
-
-
-.mySlides {
-  display: none;
-}
-
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
+li a, .dropbtn {
+  display: inline-block;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+li.dropdown {
+  display: inline-block;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 2.5s;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+.dropdown-content a:hover {background-color: #f1f1f1;}
 
-.login-redirect{
-    font-family: 'M Plus 1 Code';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30pt;
-    font-weight: 900;
-    color: #10467b;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-
-.login-redirect a:hover{
-  color: #62b4cf;
+.discrptn{
+	height:150px;
+	width:40%;
+	position: absolute;
+	top:150px;
 }
-
-.Us {
- display: grid;
- position: relative;
- grid-template-columns: 60% 40%;
+.zand{
+  text-align: center;
 }
-
-.aboutUs{
-  font-family: 'M PLUS 1 Code';
-}
-
