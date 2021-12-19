@@ -96,6 +96,7 @@ body {
 .leftcolumn {   
   float: left;
   width: 65%;
+  height:1450px;
 }
 
 /* Right column */
@@ -107,9 +108,9 @@ body {
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
-  width: 50%;
-  padding: 20px;
+  width: 100%;
+  padding: 10px;
+  height:70px;
 }
 
 /* Add a card effect for articles */
@@ -117,6 +118,7 @@ body {
    background-color: white;
    padding: 20px;
    margin-top: 20px;
+   height:450px;
 }
 
 /* Clear floats after the columns */
@@ -143,4 +145,11 @@ body {
     width: 100%;
     padding: 0;
   }
+}
+.fakeimg img{
+  height : 100%;
+  width:100%;
+}
+.fakeimg:hover img{
+  opacity:1;
 }
